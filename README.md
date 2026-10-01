@@ -4,6 +4,17 @@ A folder structure for writing a research paper in LaTeX, with every figure gene
 
 See [paper.pdf](paper.pdf) for the compiled draft skeleton. The accompanying article, [Setting up a paper project](https://www.jackwbaker.com/advice/Paper_project_setup.html), describes why the structure helps.
 
+## Getting started
+
+To start a new paper on Overleaf:
+
+1. On this page, click the green **Code** button, then **Download ZIP**.
+2. In Overleaf, click **New Project**, then **Upload Project**, and drag the zip file into the window. There is no need to unzip it first.
+
+Overleaf creates the project and compiles the draft skeleton. To make your figures update automatically from your code, see [Writing on Overleaf](#writing-on-overleaf) below.
+
+To work on your own computer instead, unzip the file (or clone this repository) and compile `paper.tex` with your LaTeX distribution.
+
 ## Structure
 
 ```
@@ -39,7 +50,7 @@ The generated figures are tracked in git, so the paper compiles without running 
 If you write on [Overleaf](https://www.overleaf.com), the paper lives there and the code stays on your computer. Overleaf's Dropbox sync (a premium feature that many universities provide) connects the two:
 
 1. Turn on Dropbox sync in your Overleaf account settings.
-2. Download this repository as a zip file and upload it to Overleaf (New Project, then Upload Project). The project appears in your Dropbox under `Apps/Overleaf/`.
+2. Upload the template to Overleaf as described in [Getting started](#getting-started). The project appears in your Dropbox under `Apps/Overleaf/`.
 3. Move the `calculations` folder out of that Dropbox folder to wherever you keep your code.
 4. Set `figure_dir` in `calculations/common.py` to the project's `figures` folder in Dropbox (there is a commented example), and point your Zotero Better BibTeX auto-export at the project's `references.bib`.
 
