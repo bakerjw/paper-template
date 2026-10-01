@@ -1,0 +1,45 @@
+# --- Figure & Saving ---
+figure.figsize: 3,2.15
+figure.autolayout: True      # Adjusts subplots to prevent text clipping
+savefig.bbox: tight          # Removes excess whitespace around the saved PDF
+savefig.transparent: False
+
+# --- Font & Text ---
+# Source Sans Pro is the primary choice, falling back to standard sans-serifs
+font.family: sans-serif
+font.sans-serif: Source Sans Pro, Arial, Helvetica, DejaVu Sans
+font.size: 9                 # Base size: use 9 for papers, 16 for presentations
+axes.labelsize: medium       # = font.size
+axes.titlesize: medium       # = font.size
+legend.fontsize: small       # ~0.83 × font.size
+xtick.labelsize: small       # ~0.83 × font.size
+ytick.labelsize: small       # ~0.83 × font.size
+
+# --- Spines & Grid ---
+axes.grid: True
+grid.alpha: 0.3              # Subtle grid for engineering precision
+grid.linestyle: -
+axes.edgecolor: black
+axes.linewidth: 1
+axes.spines.top: False       # Removes top border
+axes.spines.right: False     # Removes right border
+axes.axisbelow: True         # Grid lines behind plot elements
+xtick.direction: in          # Ticks point inside the plot area
+ytick.direction: in
+
+# --- Lines & Markers ---
+lines.linewidth: 1.5
+lines.markersize: 4
+patch.linewidth: 1
+
+# --- Math Formatting ---
+# Uses mathtext (TeX-like) for exponents (e.g., 10^2) without requiring a local TeX install
+axes.formatter.use_mathtext: True
+axes.formatter.limits: -3, 4
+
+# --- Color Schemes ---
+# Primary palette (Blue, Orange, Light Blue, Gold, Maroon)
+axes.prop_cycle: cycler('color', ['385F96', 'CF5921', '9EB8DB', 'E7B800', '800000'])
+
+# ALTERNATE: Davos Scheme (Comment out the line above and uncomment below to use)
+# axes.prop_cycle: cycler('color', ['002461', '422E8C', '943D87', 'E3786B', 'FCD6A6'])
